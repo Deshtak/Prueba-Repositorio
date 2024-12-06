@@ -4,15 +4,25 @@
 
 <p>Bienvenido a la página de Acerca de. Aquí encontrarás información sobre nuestra aplicación.</p>
 
-<button @onclick="ShowMessage">Haz clic para más info</button>
 
-<p>@message</p>
+<MudButton Href="https://github.com/Deshtak"
+           Target="_blank"
+           Variant="Variant.Text"
+           EndIcon="@Icons.Custom.Brands.GitHub"
+           Color="Color.Secondary"
+           Style="text-transform:none"
+>
 
-@code {
-    private string message;
+    GitHub Link
+</MudButton>
+<MudSpacer/>
+<MudButton Href="https://
+           Target="_blank"
+           Variant="Variant.Text"
+           EndIcon="@Icons.Custom.Brands.GitHub"
+           Color="Color.Secondary"
+           Style="text-transform:none"
+>
 
-    private void ShowMessage()
-    {
-        message = "¡Gracias por visitar la página Acerca de!";
-    }
-}
+    GitHub Link
+</MudButton>
