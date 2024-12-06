@@ -1,0 +1,20 @@
+@page "/nuevopanel"
+@inject NavigationManager Navigation
+
+
+       
+<h1>Nuevo panel</h1>
+
+
+<MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" OnClick="GoToMainMenu">
+    Volver a la página principal
+</MudButton>
+
+@code {
+    private void GoToMainMenu()
+    {
+        Console.WriteLine("Botón presionado, navegando...");
+        Navigation.NavigateTo("http://localhost:5068/");
+    }
+}
+

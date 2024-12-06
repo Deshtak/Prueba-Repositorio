@@ -1,0 +1,18 @@
+@page "/about"
+
+<h3>Acerca de Nosotros</h3>
+
+<p>Bienvenido a la página de Acerca de. Aquí encontrarás información sobre nuestra aplicación.</p>
+
+<button @onclick="ShowMessage">Haz clic para más info</button>
+
+<p>@message</p>
+
+@code {
+    private string message;
+
+    private void ShowMessage()
+    {
+        message = "¡Gracias por visitar la página Acerca de!";
+    }
+}
