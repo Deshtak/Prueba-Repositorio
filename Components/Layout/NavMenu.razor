@@ -1,4 +1,4 @@
-﻿
+﻿@inject NavigationManager Navigation
 
     <MudAppBar class="gray lighten2 shades-text text-black" Fixed="false">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" />
@@ -20,8 +20,33 @@
         <MudNavLink Href="/ofertas" Icon="@Icons.Material.Filled.AttachMoney" Disabled="true">Dashboard</MudNavLink>
         <MudNavGroup Title="Juegos" Icon="@Icons.Material.Filled.VideogameAsset" Expanded="true">
             <MudNavLink Href="/counter" Icon="@Icons.Material.Filled.Numbers">Counter</MudNavLink>
+            <MudNavLink Href="/radioactive" Icon="@Icons.Custom.Uncategorized.Radioactive">Radioactivo</MudNavLink>
         </MudNavGroup>
         <MudNavLink Href="/about" Icon="@Icons.Material.Filled.ContactSupport">About</MudNavLink>
     </MudNavMenu>
 </MudPaper>
 
+
+
+<MudDivider/>
+
+<MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.AccountCircle" Style="background-color: gray; color: white; width: 250px; height: 60px;" OnClick="OpenLogin">
+    Log In
+</MudButton>
+
+
+
+@code {
+    private bool _visible;
+
+    public void OpenLogin()
+    {
+        _visible = true;
+        StateHasChanged();
+    }
+    
+    public void RefreshPage()
+    {
+        Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+    }
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gFDGLvwIVB/0uO/lfgt1DHxdKC7whWG4GKpm4PO1xfA=",
+  "Hash": "90cIuyalMMaAMFRmwStL7W9IeWc8CQjnQN4zAKkWcqM=",
   "Source": "BlazorApp1",
   "BasePath": "_content/BlazorApp1",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.png"
+    },
+    {
+      "Identity": "/Users/yacobarriajaen/Desktop/NoelChacon/BlazorApp1/BlazorApp1/wwwroot/images/door.jpg",
+      "SourceId": "BlazorApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/yacobarriajaen/Desktop/NoelChacon/BlazorApp1/BlazorApp1/wwwroot/",
+      "BasePath": "_content/BlazorApp1",
+      "RelativePath": "images/door.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/door.jpg"
     }
   ]
 }

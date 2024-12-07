@@ -13,6 +13,7 @@
         "packagesPath": "/Users/yacobarriajaen/.nuget/packages/",
         "outputPath": "/Users/yacobarriajaen/Desktop/NoelChacon/BlazorApp1/BlazorApp1/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/yacobarriajaen/.nuget/NuGet/NuGet.Config"
         ],
