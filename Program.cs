@@ -1,6 +1,8 @@
 using BlazorApp1.Components;
 using MudBlazor;
 using MudBlazor.Services;
+using Microsoft.EntityFrameworkCore;
+using BlazorApp1.Data; // Asegúrate de incluir el namespace de tu contexto.
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddMudServices();
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -28,6 +34,11 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
+
+
+
 
 app.UseHttpsRedirection();
 
